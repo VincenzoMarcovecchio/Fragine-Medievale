@@ -11,15 +11,97 @@ body {
 }
 
 body {
-  background: $color-page;
+  background: black;
   font-family: $font-face-base;
   color: $color-text;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
+  position: relative;
 }
 
 a {
   color: $color-link;
+}
+
+//default page
+
+//hero title
+h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  color: $color-brand;
+  margin-bottom: 0;
+  margin-top: 5vh;
+}
+.hero-img {
+  z-index: -2;
+  position: absolute;
+  left: 0;
+  top: 5.6rem;
+  width: 100vw;
+  min-height: calc(100vh - 5rem);
+  object-fit: cover;
+  display: flex;
+}
+
+#clockdiv {
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 2rem 0;
+}
+h3 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: $color-brand;
+  margin-bottom: 0;
+  background: black;
+  padding-top: 6rem;
+  margin-top: 40vh;
+}
+#clockdiv > div {
+  padding: 10px;
+  background: $color-brand;
+  display: inline;
+  text-align: center;
+}
+
+#clockdiv div > span {
+  padding: 15px;
+  border-radius: 3px;
+  background: sandybrown;
+  display: inline-block;
+  margin: 0.2rem;
+}
+
+//intro below hero
+.intro {
+  width: 100%;
+  min-height: 100vh;
+  background: black;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+h4 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: $color-brand;
+  margin-top: 6rem;
+}
+iframe {
+  width: 100%;
+  max-width: 550px;
+  min-height: 315px;
+  height: 100%;
 }

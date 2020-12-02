@@ -11,8 +11,9 @@ export const Logo = () => {
 
   return (
     <LocalisedLink href="/">
-      <a className={styles.logo} title={`${brandName} | ${title}`}>
+      <a className={styles.logo}>
         {logo ? <img src={`/${logo}`} /> : brandName}
+        &nbsp;Fragine Medievale
       </a>
     </LocalisedLink>
   );

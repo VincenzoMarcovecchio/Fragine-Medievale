@@ -13,15 +13,19 @@ const Footer: FunctionComponent<Props> = ({}) => {
   const copyright = `© ${brandName} ${new Date().getFullYear()}`;
 
   return (
-    <footer className={styles.footer}>
-      <PageSize className={styles.inner}>
-        <div className={styles.copy}>{copyright}</div>
-
-        <nav>
-          <Navigation activeClassName={styles.active} links={links} />
-        </nav>
-      </PageSize>
-    </footer>
+    <>
+      <footer className={styles.footer}>
+        <PageSize className={styles.inner}>
+          <div className={styles.copy}>{copyright}</div>
+          <nav>
+            <Navigation activeClassName={styles.active} links={links} />
+          </nav>
+        </PageSize>
+      </footer>
+      <center>
+        <small>⚔️</small>
+      </center>
+    </>
   );
 };
 

@@ -6,6 +6,11 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap"
+            rel="stylesheet"
+          />
         </Head>
 
         <body>
