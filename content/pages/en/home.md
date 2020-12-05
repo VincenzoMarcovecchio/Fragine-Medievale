@@ -1,33 +1,14 @@
 ---
 name: Home
-title: Fragine Medievale
+title: A truly unique experience
 created: 2020-10-02T16:40:01.429Z
 ---
 
-<h3>Time remaining to the year event</h3>
-<div id="clockdiv">
-<div>
-<span className="days"></span>
-<div className="smalltext">Days</div>
-</div>
-<div>
-<span className="hours"></span>
-<div className="smalltext">Hours</div>
-</div>
-<div>
-<span className="minutes"></span>
-<div className="smalltext">Minutes</div>
-</div>
-<div>
-<span className="seconds"></span>
-<div className="smalltext">Seconds</div>
-</div>
-</div>
 <div className="intro">
-<br/>
-<br/>
-<h4>A truly unique experience</h4>
-<center>
-<iframe  src="https://www.youtube.com/embed/dyjqI3aHfZc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h4>Come get by</h4>
+<br/><center>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5938.823444758349!2d14.48924885800133!3d41.90550710736917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13309289113a3315%3A0xaa93966b06778218!2s66050%20Fraine%20Province%20of%20Chieti!5e0!3m2!1sen!2sit!4v1607023766322!5m2!1sen!2sit" width="600" height="450" frameBorder="0"  allowFullScreen="" aria-hidden="false" tabIndex="0"></iframe>
 </center>
+<br/>
+<br/>
 </div>

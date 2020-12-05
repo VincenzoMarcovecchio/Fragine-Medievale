@@ -1,65 +1,42 @@
-import { FunctionComponent, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Section from 'components/Section/Section';
 import PageSize from 'components/PageSize/PageSize';
 import { PageComponentProps } from './page-components.types';
-
-const DefaultPage: FunctionComponent<PageComponentProps> = ({
+import Countdown from '../components/Countdown/Countdown';
+import ReactPlayer from 'react-player';
+const DefaultPage = ({
   page: {
     attributes: { title },
     react: Content
   }
 }) => {
-  useEffect(() => {
-    function getTimeRemaining(endtime) {
-      const total = Date.parse(endtime) - Date.parse(new Date());
-      const seconds = Math.floor((total / 1000) % 60);
-      const minutes = Math.floor((total / 1000 / 60) % 60);
-      const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
-      const days = Math.floor(total / (1000 * 60 * 60 * 24));
+  const currentDate = new Date();
+  const year =
+    currentDate.getMonth() === 8 && currentDate.getDate() > 17
+      ? currentDate.getFullYear() + 1
+      : currentDate.getFullYear();
+  console.log(year);
 
-      return {
-        total,
-        days,
-        hours,
-        minutes,
-        seconds
-      };
-    }
-
-    function initializeClock(id, endtime) {
-      const clock = document.getElementById(id);
-      const daysSpan = clock.querySelector('.days');
-      const hoursSpan = clock.querySelector('.hours');
-      const minutesSpan = clock.querySelector('.minutes');
-      const secondsSpan = clock.querySelector('.seconds');
-
-      function updateClock() {
-        const t = getTimeRemaining(endtime);
-
-        daysSpan.innerHTML = t.days;
-        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-        if (t.total <= 0) {
-          clearInterval(timeinterval);
-        }
-      }
-
-      updateClock();
-      const timeinterval = setInterval(updateClock, 1000);
-    }
-
-    const deadline = new Date(
-      Date.parse(new Date()) + 258 * 24 * 60 * 60 * 1000
-    );
-    initializeClock('clockdiv', deadline);
-  }, []);
   return (
     <Section>
       <PageSize>
         <img src="./media/hero.jpg" className="hero-img" alt="medieval armor" />
-        <h2>{title}</h2>
+        <h1>Coming Soon</h1>
+        <Countdown date={`2021-08-17T00:00:00`} />
+        <div className="intro">
+          <h3>{title}</h3>
+          <br />
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              textAlign: 'center'
+            }}
+          >
+            <ReactPlayer url="https://www.youtube.com/embed/dyjqI3aHfZc" />
+          </div>
+        </div>
         <Content />
       </PageSize>
     </Section>

@@ -14,6 +14,9 @@ const Footer: FunctionComponent<Props> = ({}) => {
 
   return (
     <>
+      <br />
+      <br />
+      <br />
       <footer className={styles.footer}>
         <PageSize className={styles.inner}>
           <div className={styles.copy}>{copyright}</div>
@@ -21,10 +24,16 @@ const Footer: FunctionComponent<Props> = ({}) => {
             <Navigation activeClassName={styles.active} links={links} />
           </nav>
         </PageSize>
+        <br />
+
+        <PageSize className={styles.inner}>
+          <img
+            src="/media/regioneabruzzo.jpg"
+            className="logo-footer"
+            alt="proloco fraine"
+          />
+        </PageSize>
       </footer>
-      <center>
-        <small>⚔️</small>
-      </center>
     </>
   );
 };

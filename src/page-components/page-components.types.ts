@@ -1,4 +1,4 @@
-import { ComponentType } from 'react';
+import { ComponentType, MutableRefObject } from 'react';
 import { Page } from 'models/pages';
 
 export interface PageComponentProps {
