@@ -13,6 +13,8 @@ interface Props {
   locale: Locale;
   slug: string;
 }
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 const Page: NextPage<Props> = ({ slug, locale }) => {
   const page = getPage(slug, locale);
@@ -20,6 +22,13 @@ const Page: NextPage<Props> = ({ slug, locale }) => {
   const { basePageTitle } = getGeneralSettings();
   const { title } = attributes;
   const PageComponent = pageComponents[slug] || pageComponents.default;
+
+  const router = useRouter();
+  useEffect(() => {
+    if (router.pathname === '/') {
+      router.push('/it');
+    }
+  }, []);
 
   return (
     <>

@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-            {console.clear()}
+
           <link rel="preconnect" href="https://app.snipcart.com" />
           <link rel="preconnect" href="https://cdn.snipcart.com" />
           <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
