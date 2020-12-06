@@ -27,6 +27,20 @@ const Page: NextPage<Props> = ({ slug, locale }) => {
         <title>
           {title} | {basePageTitle}
         </title>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn.snipcart.com/themes/v3.0.26/default/snipcart.css"
+        />
+        <script
+          async
+          src="https://cdn.snipcart.com/themes/v3.0.26/default/snipcart.js"
+        ></script>
       </Head>
 
       <DefaultLayout>

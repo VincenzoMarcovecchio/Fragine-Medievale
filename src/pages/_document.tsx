@@ -5,6 +5,9 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+            {console.clear()}
+          <link rel="preconnect" href="https://app.snipcart.com" />
+          <link rel="preconnect" href="https://cdn.snipcart.com" />
           <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
@@ -19,6 +22,11 @@ class MyDocument extends Document {
             async
             src="https://cdn.snipcart.com/themes/v3.0.26/default/snipcart.js"
           ></script>
+          <div
+            hidden
+            id="snipcart"
+            data-api-key="YjNmYTFmMzItMjg3YS00YzRhLWJjN2ItYWU5NmQ5MGQzOWQwNjM3NDI2ODE4OTk5MTM0ODc2"
+          ></div>
           <style jsx>
             {`
               .ytp-chrome-top,

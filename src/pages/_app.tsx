@@ -15,6 +15,7 @@ const MyApp: FunctionComponent<AppProps> = ({
 
   return (
     <pageContext.Provider value={{ locale }}>
+      {console.clear()}
       <PageLoadingProgress />
       <Component {...pageProps} />
     </pageContext.Provider>

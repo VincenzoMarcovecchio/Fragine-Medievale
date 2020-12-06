@@ -37,6 +37,7 @@ data-item-image="../media/medieval-shield-mug.jpg"
 </div>
 </div>
 <div className="">
+
 <div className="box">
 <img
 src="../media/happy-tshirt.jpg"

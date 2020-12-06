@@ -10,13 +10,6 @@ const DefaultPage = ({
     react: Content
   }
 }) => {
-  const currentDate = new Date();
-  const year =
-    currentDate.getMonth() === 8 && currentDate.getDate() > 17
-      ? currentDate.getFullYear() + 1
-      : currentDate.getFullYear();
-  console.log(year);
-
   return (
     <Section>
       <PageSize>
