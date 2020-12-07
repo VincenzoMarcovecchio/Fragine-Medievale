@@ -176,6 +176,6 @@ button:hover:after {
 }
 
 .Countdown-col-element strong {
-  font-size: 50px;
+  font-size: calc(36px + 6 * ((100vw - 320px) / 680));
   color: $color-brand;
 }
