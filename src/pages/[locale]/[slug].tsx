@@ -26,7 +26,9 @@ const Page: NextPage<Props> = ({ slug, locale }) => {
   const router = useRouter();
   useEffect(() => {
     if (router.pathname === '/') {
-      router.push(`${locale}`);
+      setTimeout(() => {
+        router.push(`${locale}`);
+      }, 3000);
     }
   }, []);
 
